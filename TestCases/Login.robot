@@ -1,3 +1,6 @@
+*** Settings ***
+Resource    ../Pages/Login.robot
+
 *** Keywords ***
 CT: Login com sucesso
     Dado que o usuário esteja na tela de Home
