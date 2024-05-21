@@ -18,7 +18,7 @@ pip install selenium
 
 ## Executando os Testes
 <p>Para executar todos os testes na pasta tests e gerar relatórios na pasta reports:</p>
-robot -d reports tests/
+<p>robot -d reports tests/</p>
 
 Para executar um teste específico:
 robot -d reports tests/example_test.robot
