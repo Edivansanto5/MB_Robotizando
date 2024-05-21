@@ -17,7 +17,7 @@ pip install selenium
 ## Estrutura do Projeto
 
 ## Executando os Testes
-Para executar todos os testes na pasta tests e gerar relatórios na pasta reports:
+<p>Para executar todos os testes na pasta tests e gerar relatórios na pasta reports:</p>
 robot -d reports tests/
 
 Para executar um teste específico:
