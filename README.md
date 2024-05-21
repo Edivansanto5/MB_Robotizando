@@ -8,13 +8,20 @@ Antes de começar, você precisa ter o seguinte instalado:
     <li>pip (gerenciador de pacotes do Python)</li>
     <li>Google Chrome ou Mozilla Firefox (dependendo do navegador que você deseja automatizar)</li>
     <li>Chromedriver ou Geckodriver (compatível com a versão do seu navegador)</li>
-    <li>Selenium</li>
+    <li>Selenium WebDriver</li>
     <li>Robot Framework</li>
+    <li>pip install robotframework</li>
+    <li>pip install selenium</li>
 </ul>
 
-## Instalação
-pip install robotframework
-pip install selenium
+## Links das Depedências
+<ul> 
+    <li>Python</li>
+    <li>Robot Framework</li>
+    <li>Selenium Webriver</li>
+    <li></li>
+</ul>
+
 ## Estrutura do Projeto
 
 ## Executando os Testes
