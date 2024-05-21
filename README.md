@@ -3,13 +3,14 @@ Este projeto é um exemplo básico de automação de testes utilizando o Robot F
 
 ## Pré-requisitos
 Antes de começar, você precisa ter o seguinte instalado:
-
-Python 3.x
-pip (gerenciador de pacotes do Python)
-Google Chrome ou Mozilla Firefox (dependendo do navegador que você deseja automatizar)
-Chromedriver ou Geckodriver (compatível com a versão do seu navegador)
-Selenium
-Robot Framework
+<ul>
+    <li>Python 3.x</li>
+    <li>pip (gerenciador de pacotes do Python)</li>
+    <li>Google Chrome ou Mozilla Firefox (dependendo do navegador que você deseja automatizar)</li>
+    <li>Chromedriver ou Geckodriver (compatível com a versão do seu navegador)</li>
+    <li>Selenium</li>
+    <li>Robot Framework</li>
+</ul>
 
 ## Instalação
 pip install robotframework
