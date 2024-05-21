@@ -16,7 +16,7 @@ Antes de começar, você precisa ter o seguinte instalado:
 
 ## Links das Depedências
 <ul> 
-    <li>Python</li>
+    <li> <a>Python<a/></li>
     <li>Robot Framework</li>
     <li>Selenium Webriver</li>
     <li></li>
