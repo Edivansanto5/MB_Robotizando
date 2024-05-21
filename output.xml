@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-21T19:59:14.391153" rpa="false" schemaversion="5">
+<suite id="s1" name="Index" source="c:\Users\mb_la\OneDrive\Documentos\MD_Robotizando\Client\index.robot">
+<test id="s1-t1" name="CT: Logar com sucesso" line="5">
+<kw name="CT: Login com sucesso" owner="Login">
+<kw name="Dado que o usuário esteja na tela de Home" owner="Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-21T19:59:14.867252" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-21T19:59:14.866249" elapsed="3.685415"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-21T19:59:18.552666" elapsed="0.051757"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T19:59:20.606302" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T19:59:18.605917" elapsed="2.000900"/>
+</kw>
+<status status="PASS" start="2024-05-21T19:59:14.863724" elapsed="5.743093"/>
+</kw>
+<kw name="Quando isnerir o Login e a senha corretamente" owner="Login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T19:59:20.607826" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T19:59:20.607826" elapsed="0.236524"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-21T19:59:20.845350" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T19:59:20.845350" elapsed="0.229727"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T19:59:24.077528" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T19:59:21.076091" elapsed="3.001946"/>
+</kw>
+<status status="PASS" start="2024-05-21T19:59:20.606817" elapsed="3.472234"/>
+</kw>
+<kw name="Então o usuário será logado com sucesso" owner="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-21T19:59:24.081063" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<arg>//input[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-21T19:59:24.080049" elapsed="0.177850"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='app_logo'][contains(.,'Swag Labs')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-21T19:59:24.258902" elapsed="0.147301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-21T19:59:27.408551" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-21T19:59:24.407204" elapsed="3.001347"/>
+</kw>
+<status status="PASS" start="2024-05-21T19:59:24.079051" elapsed="3.330005"/>
+</kw>
+<status status="PASS" start="2024-05-21T19:59:14.861718" elapsed="12.547338"/>
+</kw>
+<status status="PASS" start="2024-05-21T19:59:14.860190" elapsed="12.549875"/>
+</test>
+<status status="PASS" start="2024-05-21T19:59:14.402692" elapsed="13.010385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Index">Index</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
