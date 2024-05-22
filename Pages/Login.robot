@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Resources/Login.robot
 
 
 *** Keywords ***
@@ -16,3 +15,4 @@ Então o usuário será logado com sucesso
     Click Button     //input[@id='login-button']
     Wait Until Element Is Visible    //div[@class='app_logo'][contains(.,'Swag Labs')]
     Sleep    3s
+
