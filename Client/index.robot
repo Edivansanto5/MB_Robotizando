@@ -1,6 +1,6 @@
 *** Settings ***
 Resource        ../TestCases/Login.robot
-Resource        ../TestCases/Login_sem_inserir_nomeUsuario.robot
+#Resource        ../TestCases/Login_sem_inserir_nomeUsuario.robot
 
 
 *** Test Cases ***

@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-25T09:02:48.939664" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-25T09:12:23.555713" rpa="false" schemaversion="5">
 <suite id="s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
 <test id="s1-t1" name="CT01: Logar com sucesso" line="7">
 <kw name="CT01: Login com sucesso" owner="Login">
 <kw name="Dado que o usuário esteja na tela de Home" owner="Login">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:02:49.246709" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-05-25T09:12:23.910776" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>https://www.saucedemo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-25T09:02:49.246709" elapsed="2.793245"/>
+<status status="PASS" start="2024-05-25T09:12:23.910776" elapsed="1.896265"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-25T09:02:52.040948" elapsed="0.037524"/>
+<status status="PASS" start="2024-05-25T09:12:25.808041" elapsed="0.548365"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-25T09:02:54.079630" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-25T09:12:28.357586" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-25T09:02:52.078472" elapsed="2.001158"/>
+<status status="PASS" start="2024-05-25T09:12:26.357404" elapsed="2.000182"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:02:49.245710" elapsed="4.833920"/>
+<status status="PASS" start="2024-05-25T09:12:23.909777" elapsed="4.447809"/>
 </kw>
 <kw name="Quando isnerir o Login e a senha corretamente" owner="Login">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:02:54.080636" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<msg time="2024-05-25T09:12:28.358592" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
 <arg>//input[@id='user-name']</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T09:02:54.079630" elapsed="0.190060"/>
+<status status="PASS" start="2024-05-25T09:12:28.357586" elapsed="0.179009"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:02:54.269690" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<msg time="2024-05-25T09:12:28.537592" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
 <arg>//input[@id='password']</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T09:02:54.269690" elapsed="0.119525"/>
+<status status="PASS" start="2024-05-25T09:12:28.537592" elapsed="0.144078"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-25T09:02:57.389643" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-05-25T09:12:31.681876" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-25T09:02:54.389215" elapsed="3.000428"/>
+<status status="PASS" start="2024-05-25T09:12:28.681670" elapsed="3.000206"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:02:54.079630" elapsed="3.310013"/>
+<status status="PASS" start="2024-05-25T09:12:28.357586" elapsed="3.324290"/>
 </kw>
 <kw name="Então o usuário será logado com sucesso" owner="Login">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:02:57.389643" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<msg time="2024-05-25T09:12:31.682421" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
 <arg>//input[@id='login-button']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T09:02:57.389643" elapsed="0.117195"/>
+<status status="PASS" start="2024-05-25T09:12:31.682421" elapsed="0.123049"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//div[@class='app_logo'][contains(.,'Swag Labs')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-25T09:02:57.507837" elapsed="0.141547"/>
+<status status="PASS" start="2024-05-25T09:12:31.805470" elapsed="0.028590"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-25T09:03:00.650706" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-05-25T09:12:34.834505" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-25T09:02:57.649384" elapsed="3.001322"/>
+<status status="PASS" start="2024-05-25T09:12:31.834060" elapsed="3.000445"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:02:57.389643" elapsed="3.261063"/>
+<status status="PASS" start="2024-05-25T09:12:31.681876" elapsed="3.152629"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:02:49.245710" elapsed="11.404996"/>
+<status status="PASS" start="2024-05-25T09:12:23.909777" elapsed="10.924728"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:02:49.244709" elapsed="11.407004"/>
+<status status="PASS" start="2024-05-25T09:12:23.908775" elapsed="10.926279"/>
 </test>
 <test id="s1-t2" name="CT02: Login sem inserir o Login" line="10">
 <kw name="CT02: Login sem inserir o Login" owner="Login">
 <kw name="Dado que o usuário esteja na tela de login" owner="Login_sem_inserir_nomeUsuario">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:03:00.655714" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-05-25T09:12:34.838062" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>https://www.saucedemo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-25T09:03:00.655714" elapsed="1.757598"/>
+<status status="PASS" start="2024-05-25T09:12:34.838062" elapsed="1.773363"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-25T09:03:02.414309" elapsed="0.537888"/>
+<status status="PASS" start="2024-05-25T09:12:36.612429" elapsed="0.549453"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-25T09:03:04.952367" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-05-25T09:12:39.162205" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-25T09:03:02.952197" elapsed="2.000170"/>
+<status status="PASS" start="2024-05-25T09:12:37.161882" elapsed="2.000323"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:00.654721" elapsed="4.297646"/>
+<status status="PASS" start="2024-05-25T09:12:34.838062" elapsed="4.324143"/>
 </kw>
 <kw name="Quando isnerir somente a senha corretamente" owner="Login_sem_inserir_nomeUsuario">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:03:04.952882" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<msg time="2024-05-25T09:12:39.162712" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
 <arg>//input[@id='password']</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T09:03:04.952882" elapsed="0.201473"/>
+<status status="PASS" start="2024-05-25T09:12:39.162712" elapsed="0.181545"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:04.952367" elapsed="0.202987"/>
+<status status="PASS" start="2024-05-25T09:12:39.162712" elapsed="0.182547"/>
 </kw>
 <kw name="E ao Clicar em &quot;Login&quot;" owner="Login_sem_inserir_nomeUsuario">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:03:05.156356" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<msg time="2024-05-25T09:12:39.346769" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
 <arg>//input[@id='login-button']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T09:03:05.156356" elapsed="0.093140"/>
+<status status="PASS" start="2024-05-25T09:12:39.345259" elapsed="0.104698"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:05.155354" elapsed="0.094142"/>
+<status status="PASS" start="2024-05-25T09:12:39.345259" elapsed="0.105700"/>
 </kw>
 <kw name="Então uma mensagem de erro vai ser exibida" owner="Login_sem_inserir_nomeUsuario">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//h3[@data-test='error'][contains(.,'Epic sadface: Username is required')]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-25T09:03:05.249496" elapsed="0.024001"/>
+<status status="PASS" start="2024-05-25T09:12:39.450959" elapsed="0.031000"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:05.249496" elapsed="0.024001"/>
+<status status="PASS" start="2024-05-25T09:12:39.450959" elapsed="0.031998"/>
 </kw>
 <kw name="E o usuário não pode logar no site" owner="Login_sem_inserir_nomeUsuario">
 <kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
-<msg time="2024-05-25T09:03:05.285495" level="INFO">Element '//span[@class='title'][contains(.,'Products')]' did not exist.</msg>
+<msg time="2024-05-25T09:12:39.498956" level="INFO">Element '//span[@class='title'][contains(.,'Products')]' did not exist.</msg>
 <arg>//span[@class='title'][contains(.,'Products')]</arg>
 <doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<status status="PASS" start="2024-05-25T09:03:05.274501" elapsed="0.010994"/>
+<status status="PASS" start="2024-05-25T09:12:39.482957" elapsed="0.015999"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:05.273497" elapsed="0.011998"/>
+<status status="PASS" start="2024-05-25T09:12:39.482957" elapsed="0.015999"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:00.654721" elapsed="4.630774"/>
+<status status="PASS" start="2024-05-25T09:12:34.837067" elapsed="4.662889"/>
 </kw>
-<status status="PASS" start="2024-05-25T09:03:00.652717" elapsed="4.632778"/>
+<status status="PASS" start="2024-05-25T09:12:34.836104" elapsed="4.663852"/>
 </test>
-<status status="PASS" start="2024-05-25T09:02:48.941669" elapsed="16.345826"/>
+<status status="PASS" start="2024-05-25T09:12:23.557715" elapsed="15.943241"/>
 </suite>
 <statistics>
 <total>
@@ -146,6 +146,5 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-05-25T09:02:49.242709" level="ERROR">Error in file 'C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot' on line 3: Resource file '..\TestCases\Login_sem_inserir_nomeUsuario.robot' does not exist.</msg>
 </errors>
 </robot>
