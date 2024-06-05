@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-02T10:28:58.833991" rpa="false" schemaversion="5">
+<suite id="s1" name="MB Robotizando" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando">
+<suite id="s1-s1" name="Client" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client">
+<suite id="s1-s1-s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
+<test id="s1-s1-s1-t1" name="CT03: Login inválido inserindo apenas o nome de usuário" line="14">
+<kw name="CT03: Login inserindo apenas o nome de usuário" owner="Login">
+<kw name="Dado que o usuário esteja na tela de login" owner="Login_inserindo_apenas_senha">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-02T10:28:59.097694" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-02T10:28:59.097694" elapsed="5.381928"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-02T10:29:04.480623" elapsed="0.041300"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-02T10:29:06.523519" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-02T10:29:04.522922" elapsed="2.000597"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:28:59.096695" elapsed="7.426824"/>
+</kw>
+<kw name="Quando inserir somente o nome de usuário" owner="Login_inserindo_apenas_nome_usuario">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-02T10:29:06.525272" level="INFO">Typing text 'testedeinput' into text field '//input[@data-test='username']'.</msg>
+<arg>//input[@data-test='username']</arg>
+<arg>testedeinput</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T10:29:06.523519" elapsed="0.181411"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:29:06.523519" elapsed="0.181411"/>
+</kw>
+<kw name="E ao Clicar em &quot;Login&quot;" owner="Login_inserindo_apenas_senha">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-02T10:29:06.706198" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<arg>//input[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-02T10:29:06.706198" elapsed="0.070398"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:29:06.706198" elapsed="0.070398"/>
+</kw>
+<kw name="Então uma mensagem de erro &quot;Epic sadface: Password is required&quot;" owner="Login_inserindo_apenas_nome_usuario">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h3[@data-test='error'][contains(.,'Epic sadface: Password is required')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-02T10:29:06.776596" elapsed="0.024136"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-02T10:29:06.801732" level="INFO">finalizdo</msg>
+<arg>finalizdo</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-02T10:29:06.800732" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:29:06.776596" elapsed="0.025136"/>
+</kw>
+<kw name="E o usuário não pode logar no site" owner="Login_inserindo_apenas_senha">
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2024-06-02T10:29:06.813548" level="INFO">Element '//span[@class='title'][contains(.,'Products')]' did not exist.</msg>
+<arg>//span[@class='title'][contains(.,'Products')]</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2024-06-02T10:29:06.801732" elapsed="0.011816"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:29:06.801732" elapsed="0.011816"/>
+</kw>
+<status status="PASS" start="2024-06-02T10:28:59.096695" elapsed="7.717852"/>
+</kw>
+<tag>CT03</tag>
+<status status="PASS" start="2024-06-02T10:28:59.095655" elapsed="7.718892"/>
+</test>
+<status status="PASS" start="2024-06-02T10:28:58.863201" elapsed="7.953597"/>
+</suite>
+<status status="PASS" start="2024-06-02T10:28:58.860552" elapsed="7.958207"/>
+</suite>
+<status status="PASS" start="2024-06-02T10:28:58.836513" elapsed="7.983249"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CT03</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="MB Robotizando">MB Robotizando</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Client">MB Robotizando.Client</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Index">MB Robotizando.Client.Index</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
