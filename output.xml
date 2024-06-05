@@ -1,76 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-25T14:33:57.345015" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-05T16:08:28.304064" rpa="false" schemaversion="5">
 <suite id="s1" name="Index" source="c:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
-<test id="s1-t1" name="CT05: Login com usuário bloqueado" line="18">
-<kw name="CT05: Login com usuário Bloqueado" owner="Login">
-<kw name="Dado que o usuário esteja na tela de login" owner="Login_inserindo_apenas_senha">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-25T14:33:57.613751" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
-<arg>https://www.saucedemo.com/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-25T14:33:57.613751" elapsed="2.642808"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-25T14:34:00.256559" elapsed="0.044322"/>
+<test id="s1-t1" name="CT07: Exibindo produtos de acordo com filtros de Z a A" line="33">
+<kw name="CT07: Filtrando produtos por nome de (Z a A)" owner="Filtrando_Produtos">
+<kw name="Quando selecionar a categoria de (Z a A)" owner="Filtrando_ProdutosZA">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-05T16:08:28.606139" level="INFO">Selecting options from selection list '//select[@data-test='product-sort-container']' by value za.</msg>
+<msg time="2024-06-05T16:08:28.609138" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-06-05T16:08:28.610140" level="FAIL">No browser is open.</msg>
+<arg>//select[@data-test='product-sort-container']</arg>
+<arg>za</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2024-06-05T16:08:28.605140" elapsed="0.012511">No browser is open.</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-25T14:34:02.301325" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-25T14:34:00.300881" elapsed="2.000444"/>
+<status status="NOT RUN" start="2024-06-05T16:08:28.618664" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-25T14:33:57.613751" elapsed="4.687574"/>
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<var>${selected_option}</var>
+<arg>//select[@data-test='product-sort-container']</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-05T16:08:28.618664" elapsed="0.000999"/>
 </kw>
-<kw name="Quando inserir um nome de usuário bloqueado &quot;locked_out_user&quot;" owner="Login_com_usuário_Bloqueado">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-25T14:34:02.301325" level="INFO">Typing text 'locked_out_user' into text field '//input[@placeholder='Username']'.</msg>
-<arg>//input[@placeholder='Username']</arg>
-<arg>locked_out_user</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T14:34:02.301325" elapsed="0.186579"/>
+<kw name="Log" owner="BuiltIn">
+<arg>Selected option: ${selected_option}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-05T16:08:28.619663" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-25T14:34:02.301325" elapsed="0.186579"/>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_option}</arg>
+<arg>Name (Z to A)</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2024-06-05T16:08:28.620663" elapsed="0.000000"/>
 </kw>
-<kw name="E a senha Válida" owner="Login_com_usuário_Bloqueado">
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-05-25T14:34:02.488907" level="INFO">Typing password into text field '//input[contains(@placeholder,'Password')]'.</msg>
-<msg time="2024-05-25T14:34:02.534216" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>//input[contains(@placeholder,'Password')]</arg>
-<arg>secret_sauce</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T14:34:02.488907" elapsed="0.140991"/>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-05T16:08:28.620663" elapsed="0.001001"/>
 </kw>
-<status status="PASS" start="2024-05-25T14:34:02.487904" elapsed="0.143008"/>
+<status status="FAIL" start="2024-06-05T16:08:28.604139" elapsed="0.017525">No browser is open.</status>
 </kw>
-<kw name="Quando clicar no botão 'Login'" owner="Login_com_usuário_Bloqueado">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-25T14:34:02.631908" level="INFO">Clicking button '//input[@data-test='login-button']'.</msg>
-<arg>//input[@data-test='login-button']</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-25T14:34:02.631908" elapsed="0.092657"/>
+<status status="FAIL" start="2024-06-05T16:08:28.604139" elapsed="0.018035">No browser is open.</status>
 </kw>
-<status status="PASS" start="2024-05-25T14:34:02.630912" elapsed="0.093653"/>
-</kw>
-<kw name="Então uma mensagem de erro &quot;Epic sadface: Sorry, this user has been locked out&quot; será exibida">
-<msg time="2024-05-25T14:34:02.727350" level="FAIL">No keyword with name 'Então uma mensagem de erro "Epic sadface: Sorry, this user has been locked out" será exibida' found.</msg>
-<status status="FAIL" start="2024-05-25T14:34:02.727350" elapsed="0.005555">No keyword with name 'Então uma mensagem de erro "Epic sadface: Sorry, this user has been locked out" será exibida' found.</status>
-</kw>
-<kw name="E o usuário não será logado no sistema">
-<status status="NOT RUN" start="2024-05-25T14:34:02.736900" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-05-25T14:33:57.613751" elapsed="5.123656">No keyword with name 'Então uma mensagem de erro "Epic sadface: Sorry, this user has been locked out" será exibida' found.</status>
-</kw>
-<status status="FAIL" start="2024-05-25T14:33:57.607742" elapsed="5.129665">No keyword with name 'Então uma mensagem de erro "Epic sadface: Sorry, this user has been locked out" será exibida' found.</status>
+<tag>CT07_filtro_ZA</tag>
+<status status="FAIL" start="2024-06-05T16:08:28.602128" elapsed="0.020046">No browser is open.</status>
 </test>
-<status status="FAIL" start="2024-05-25T14:33:57.351152" elapsed="5.388843"/>
+<status status="FAIL" start="2024-06-05T16:08:28.311069" elapsed="0.314114"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">CT07_filtro_ZA</stat>
 </tag>
 <suite>
 <stat pass="0" fail="1" skip="0" id="s1" name="Index">Index</stat>

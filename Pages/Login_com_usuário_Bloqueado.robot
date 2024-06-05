@@ -4,6 +4,7 @@ Library    SeleniumLibrary
 
 *** Keywords ***
 Dado que o usuário estaja na tela de login
+    Maximize Browser Window
     Open Browser    https://www.saucedemo.com/    chrome
     Wait Until Element Is Visible    //div[contains(@class,'login_logo')]
     Sleep   2s

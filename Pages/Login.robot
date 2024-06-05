@@ -14,5 +14,5 @@ Quando isnerir o Login e a senha corretamente
 Então o usuário será logado com sucesso
     Click Button     //input[@id='login-button']
     Wait Until Element Is Visible    //div[@class='app_logo'][contains(.,'Swag Labs')]
-    Sleep    3s
+    Sleep    5s
 

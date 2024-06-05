@@ -26,5 +26,10 @@ CT05: Login com usuário bloqueado
     CT05: Login com usuário Bloqueado
 
 # Teste de Categorias de Produtos
-CT01: Exibindo produtos de acordo com filtros de A a Z
-    CT01: Filtrando produtos por nome de (A a Z)
+CT06: Exibindo produtos de acordo com filtros de A a Z
+    [Tags]    CT06_filtro_AZ
+    CT06: Filtrando produtos por nome de (A a Z)
+
+CT07: Exibindo produtos de acordo com filtros de Z a A
+    [Tags]    CT07_filtro_ZA
+    CT07: Filtrando produtos por nome de (Z a A)
