@@ -1,7 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Pages/Filtrando_ProdutosAZ.robot
-Resource     ../Pages/Filtrando_ProdutosZA.robot
+Resource    ../../Pages/Filtrando_ProdutosAZ.robot
+#Resource    ../../Pages/Filtrando_ProdutosZA.robot
+
 
 
 *** Keywords ***

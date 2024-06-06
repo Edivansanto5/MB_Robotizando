@@ -33,3 +33,8 @@ CT06: Exibindo produtos de acordo com filtros de A a Z
 CT07: Exibindo produtos de acordo com filtros de Z a A
     [Tags]    CT07_filtro_ZA
     CT07: Filtrando produtos por nome de (Z a A)
+
+
+CT08: Exibindo produtos de acordo com preço baixo para auto
+    [Tags]    CT08_filtro_baixo_auto
+    CT08: Filtrando produtos por preço (baixo a auto)

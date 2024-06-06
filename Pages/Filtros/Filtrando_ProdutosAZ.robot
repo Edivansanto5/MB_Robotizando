@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../Pages/Login.robot
+Resource    ../../Pages/Login.robot
 #Resource    ../Pages/Filtrando_ProdutosAZ.robot
 
 

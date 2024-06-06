@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-06T08:12:28.543891" rpa="false" schemaversion="5">
+<suite id="s1" name="MB Robotizando" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando">
+<suite id="s1-s1" name="Client" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client">
+<suite id="s1-s1-s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
+<test id="s1-s1-s1-t1" name="CT07: Exibindo produtos de acordo com filtros de Z a A" line="33">
+<kw name="CT07: Filtrando produtos por nome de (Z a A)" owner="Filtrando_Produtos">
+<kw name="Dado que o usuário esteja logado no sistema" owner="Filtrando_ProdutosAZ">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:12:28.914393" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-06T08:12:28.914393" elapsed="9.075422"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-06T08:12:37.989815" elapsed="0.037136"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-06T08:12:39.027797" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-06T08:12:38.026951" elapsed="1.000846"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:12:39.029834" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:12:39.027797" elapsed="0.196775"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:12:39.224572" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:12:39.224572" elapsed="0.129128"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:12:39.353700" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<arg>//input[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:12:39.353700" elapsed="0.113537"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='app_logo'][contains(.,'Swag Labs')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:12:39.467237" elapsed="0.033384"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:12:28.913396" elapsed="10.587225"/>
+</kw>
+<kw name="Quando selecionar a categoria de (Z a A)">
+<msg time="2024-06-06T08:12:39.505140" level="FAIL">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
+    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</msg>
+<status status="FAIL" start="2024-06-06T08:12:39.505140" elapsed="0.000000">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
+    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+</kw>
+<status status="FAIL" start="2024-06-06T08:12:28.913396" elapsed="10.591744">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
+    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+</kw>
+<tag>CT07_filtro_ZA</tag>
+<status status="FAIL" start="2024-06-06T08:12:28.911496" elapsed="10.594645">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
+    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+</test>
+<status status="FAIL" start="2024-06-06T08:12:28.581164" elapsed="10.926977"/>
+</suite>
+<status status="FAIL" start="2024-06-06T08:12:28.578190" elapsed="10.931953"/>
+</suite>
+<status status="FAIL" start="2024-06-06T08:12:28.546893" elapsed="10.964249"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CT07_filtro_ZA</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="MB Robotizando">MB Robotizando</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Client">MB Robotizando.Client</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Index">MB Robotizando.Client.Index</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-06T08:12:28.905462" level="ERROR">Error in file 'C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\TestCases\Filtrando_Produtos.robot' on line 4: Resource file '..\Pages\Filtrando_ProdutosZA.robot' does not exist.</msg>
+</errors>
+</robot>

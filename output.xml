@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-06T08:28:39.699250" rpa="false" schemaversion="5">
+<suite id="s1" name="Index" source="c:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
+<test id="s1-t1" name="CT08: Exibindo produtos de acordo com preço baixo para auto" line="38">
+<kw name="CT08: Filtrando produtos por preço (baixo a auto)" owner="Filtrando_Produtos">
+<kw name="Dado que o usuário esteja na tela principal" owner="Filtrando_Produtos_price_low_to_high">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:40.018571" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-06T08:28:40.018571" elapsed="3.895409"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-06T08:28:43.914976" elapsed="0.039566"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-06T08:28:44.955632" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-06T08:28:43.955543" elapsed="1.000089"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:28:40.017604" elapsed="4.938028"/>
+</kw>
+<kw name="E ao inserir o login e senha corretos" owner="Filtrando_Produtos_price_low_to_high">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:44.956643" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:28:44.956643" elapsed="0.239178"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:45.196822" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:28:45.195821" elapsed="0.134582"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:28:44.955632" elapsed="0.374771"/>
+</kw>
+<kw name="Quando estiver logado no sistema" owner="Filtrando_Produtos_price_low_to_high">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:45.331406" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<arg>//input[@id='login-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:28:45.331406" elapsed="0.107138"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='app_logo'][contains(.,'Swag Labs')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:28:45.439546" elapsed="0.030276"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:28:45.330403" elapsed="0.139419"/>
+</kw>
+<kw name="E selecionar filtrar os produtos na categoria baixo a auto" owner="Filtrando_Produtos_price_low_to_high">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:45.472336" level="INFO">Selecting options from selection list '//select[@data-test='product-sort-container']' by value lohi.</msg>
+<arg>//select[@data-test='product-sort-container']</arg>
+<arg>lohi</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-06-06T08:28:45.471825" elapsed="0.098752"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-06T08:28:46.571055" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-06T08:28:45.570577" elapsed="1.000478"/>
+</kw>
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:28:46.660142" level="INFO">${selected_option} = Price (low to high)</msg>
+<var>${selected_option}</var>
+<arg>//select[@data-test='product-sort-container']</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:28:46.571573" elapsed="0.088569"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-06T08:28:46.661729" level="INFO">Selected option: Price (low to high)</msg>
+<arg>Selected option: ${selected_option}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-06T08:28:46.661729" elapsed="0.000933"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_option}</arg>
+<arg>Price (low to high)</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-06-06T08:28:46.662662" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:28:45.470825" elapsed="1.191837"/>
+</kw>
+<status status="PASS" start="2024-06-06T08:28:40.016604" elapsed="6.647064"/>
+</kw>
+<tag>CT08_filtro_baixo_auto</tag>
+<status status="PASS" start="2024-06-06T08:28:40.015570" elapsed="6.648311"/>
+</test>
+<status status="PASS" start="2024-06-06T08:28:39.705361" elapsed="6.960522"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CT08_filtro_baixo_auto</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Index">Index</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-06T08:28:40.002585" level="ERROR">Error in file 'c:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Pages\Filtros\Filtrando_ProdutosZA.robot' on line 3: Resource file '..\..\Pages\Filtrando_ProdutosAZ.robot' does not exist.</msg>
+</errors>
+</robot>
