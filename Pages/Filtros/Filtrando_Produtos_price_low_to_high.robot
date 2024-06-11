@@ -1,7 +1,7 @@
 *** Settings ***
 
 Library    SeleniumLibrary
-Resource    ../../Pages/Login.robot
+
 
 
 

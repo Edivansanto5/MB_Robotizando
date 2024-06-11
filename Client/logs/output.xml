@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-11T08:27:04.214678" rpa="false" schemaversion="5">
+<suite id="s1" name="Client" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client">
+<suite id="s1-s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
+<test id="s1-s1-t1" name="CT09: Exibindo produtos de acordo com preço auto para baixo" line="42">
+<kw name="CT09: Filtrando produtos por preço (auto a baixo)" owner="Filtrando_Produtos">
+<kw name="Dado que o usuário esteja na tela incial" owner="Filtrando_Produtos_price_high_to_low">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-11T08:27:04.683556" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>https://www.saucedemo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-11T08:27:04.683556" elapsed="6.190272"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-11T08:27:10.873828" elapsed="0.042709"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-11T08:27:11.917713" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-11T08:27:10.917543" elapsed="1.000170"/>
+</kw>
+<status status="PASS" start="2024-06-11T08:27:04.682558" elapsed="7.235155"/>
+</kw>
+<kw name="E inserindo a senha e login corretamente e válidos" owner="Filtrando_Produtos_price_high_to_low">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-11T08:27:11.918262" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>//input[@id='user-name']</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-11T08:27:11.918262" elapsed="0.179994"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-11T08:27:12.099258" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<arg>//input[@id='password']</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-11T08:27:12.099258" elapsed="0.155127"/>
+</kw>
+<status status="PASS" start="2024-06-11T08:27:11.918262" elapsed="0.336123"/>
+</kw>
+<status status="PASS" start="2024-06-11T08:27:04.682558" elapsed="7.571827"/>
+</kw>
+<tag>CT09_filtro_auto_baixo</tag>
+<status status="PASS" start="2024-06-11T08:27:04.680547" elapsed="7.574869"/>
+</test>
+<status status="PASS" start="2024-06-11T08:27:04.252608" elapsed="8.003796"/>
+</suite>
+<status status="PASS" start="2024-06-11T08:27:04.217650" elapsed="8.040735"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CT09_filtro_auto_baixo</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Client">Client</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Index">Client.Index</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-11T08:27:04.660293" level="ERROR">Error in file 'C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Pages\Filtros\Filtrando_ProdutosZA.robot' on line 3: Resource file '..\..\Pages\Filtrando_ProdutosAZ.robot' does not exist.</msg>
+</errors>
+</robot>

@@ -1,88 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-06T08:12:28.543891" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-06-11T08:39:06.309547" rpa="false" schemaversion="5">
 <suite id="s1" name="MB Robotizando" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando">
 <suite id="s1-s1" name="Client" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client">
 <suite id="s1-s1-s1" name="Index" source="C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Client\index.robot">
-<test id="s1-s1-s1-t1" name="CT07: Exibindo produtos de acordo com filtros de Z a A" line="33">
-<kw name="CT07: Filtrando produtos por nome de (Z a A)" owner="Filtrando_Produtos">
-<kw name="Dado que o usuário esteja logado no sistema" owner="Filtrando_ProdutosAZ">
+<test id="s1-s1-s1-t1" name="CT09: Exibindo produtos de acordo com preço auto para baixo" line="42">
+<kw name="CT09: Filtrando produtos por preço (auto a baixo)" owner="Filtrando_Produtos">
+<kw name="Dado que o usuário esteja na tela incial" owner="Filtrando_Produtos_price_high_to_low">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-06T08:12:28.914393" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2024-06-11T08:39:06.797632" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>https://www.saucedemo.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-06T08:12:28.914393" elapsed="9.075422"/>
+<status status="PASS" start="2024-06-11T08:39:06.797632" elapsed="9.278353"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-06T08:12:37.989815" elapsed="0.037136"/>
+<status status="PASS" start="2024-06-11T08:39:16.075985" elapsed="0.032902"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-06T08:12:39.027797" level="INFO">Slept 1 second.</msg>
+<msg time="2024-06-11T08:39:17.110092" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-06T08:12:38.026951" elapsed="1.000846"/>
+<status status="PASS" start="2024-06-11T08:39:16.108887" elapsed="1.001205"/>
 </kw>
+<status status="PASS" start="2024-06-11T08:39:06.796117" elapsed="10.313975"/>
+</kw>
+<kw name="E inserindo a senha e login corretamente e válidos" owner="Filtrando_Produtos_price_high_to_low">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-06T08:12:39.029834" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<msg time="2024-06-11T08:39:17.111140" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
 <arg>//input[@id='user-name']</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-06T08:12:39.027797" elapsed="0.196775"/>
+<status status="PASS" start="2024-06-11T08:39:17.110092" elapsed="0.192786"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-06T08:12:39.224572" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
+<msg time="2024-06-11T08:39:17.303876" level="INFO">Typing text 'secret_sauce' into text field '//input[@id='password']'.</msg>
 <arg>//input[@id='password']</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-06T08:12:39.224572" elapsed="0.129128"/>
+<status status="PASS" start="2024-06-11T08:39:17.303876" elapsed="0.160036"/>
 </kw>
+<status status="PASS" start="2024-06-11T08:39:17.110092" elapsed="0.353820"/>
+</kw>
+<kw name="Quando o usuário estiver logado no sistema" owner="Filtrando_Produtos_price_high_to_low">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-06T08:12:39.353700" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<msg time="2024-06-11T08:39:17.464913" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
 <arg>//input[@id='login-button']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-06T08:12:39.353700" elapsed="0.113537"/>
+<status status="PASS" start="2024-06-11T08:39:17.464913" elapsed="0.127581"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//div[@class='app_logo'][contains(.,'Swag Labs')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-06T08:12:39.467237" elapsed="0.033384"/>
+<status status="PASS" start="2024-06-11T08:39:17.592494" elapsed="0.066940"/>
 </kw>
-<status status="PASS" start="2024-06-06T08:12:28.913396" elapsed="10.587225"/>
+<status status="PASS" start="2024-06-11T08:39:17.463912" elapsed="0.195522"/>
 </kw>
-<kw name="Quando selecionar a categoria de (Z a A)">
-<msg time="2024-06-06T08:12:39.505140" level="FAIL">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
-    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</msg>
-<status status="FAIL" start="2024-06-06T08:12:39.505140" elapsed="0.000000">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
-    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+<kw name="E selecionar a categoria de auto a baixo" owner="Filtrando_Produtos_price_high_to_low">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-11T08:39:17.661091" level="INFO">Selecting options from selection list '//select[@data-test='product-sort-container']' by value hilo.</msg>
+<arg>//select[@data-test='product-sort-container']</arg>
+<arg>hilo</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-06-11T08:39:17.660080" elapsed="0.140689"/>
 </kw>
-<status status="FAIL" start="2024-06-06T08:12:28.913396" elapsed="10.591744">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
-    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-11T08:39:18.802182" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-11T08:39:17.800769" elapsed="1.001413"/>
 </kw>
-<tag>CT07_filtro_ZA</tag>
-<status status="FAIL" start="2024-06-06T08:12:28.911496" elapsed="10.594645">No keyword with name 'Quando selecionar a categoria de (Z a A)' found. Did you mean:
-    Filtrando_ProdutosAZ.Quando selecionar a categoria Name (A to Z)</status>
+<kw name="Get Selected List Label" owner="SeleniumLibrary">
+<msg time="2024-06-11T08:39:18.907646" level="INFO">${selected_option} = Price (high to low)</msg>
+<var>${selected_option}</var>
+<arg>//select[@data-test='product-sort-container']</arg>
+<doc>Returns the label of selected option from selection list ``locator``.</doc>
+<status status="PASS" start="2024-06-11T08:39:18.802182" elapsed="0.105464"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-11T08:39:18.907646" level="INFO">Selected option: Price (high to low)</msg>
+<arg>Selected option: ${selected_option}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-11T08:39:18.907646" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${selected_option}</arg>
+<arg>Price (high to low)</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-06-11T08:39:18.907646" elapsed="0.001406"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-11T08:39:18.909052" level="INFO">teste passou</msg>
+<arg>teste passou</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-06-11T08:39:18.909052" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-06-11T08:39:17.660080" elapsed="1.248972"/>
+</kw>
+<status status="PASS" start="2024-06-11T08:39:06.796117" elapsed="12.112935"/>
+</kw>
+<tag>CT09_filtro_auto_baixo</tag>
+<status status="PASS" start="2024-06-11T08:39:06.795115" elapsed="12.114933"/>
 </test>
-<status status="FAIL" start="2024-06-06T08:12:28.581164" elapsed="10.926977"/>
+<status status="PASS" start="2024-06-11T08:39:06.361832" elapsed="12.550254"/>
 </suite>
-<status status="FAIL" start="2024-06-06T08:12:28.578190" elapsed="10.931953"/>
+<status status="PASS" start="2024-06-11T08:39:06.358045" elapsed="12.556002"/>
 </suite>
-<status status="FAIL" start="2024-06-06T08:12:28.546893" elapsed="10.964249"/>
+<status status="PASS" start="2024-06-11T08:39:06.311556" elapsed="12.604493"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">CT07_filtro_ZA</stat>
+<stat pass="1" fail="0" skip="0">CT09_filtro_auto_baixo</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="MB Robotizando">MB Robotizando</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Client">MB Robotizando.Client</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Index">MB Robotizando.Client.Index</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="MB Robotizando">MB Robotizando</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Client">MB Robotizando.Client</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Index">MB Robotizando.Client.Index</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-06-06T08:12:28.905462" level="ERROR">Error in file 'C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\TestCases\Filtrando_Produtos.robot' on line 4: Resource file '..\Pages\Filtrando_ProdutosZA.robot' does not exist.</msg>
+<msg time="2024-06-11T08:39:06.773017" level="ERROR">Error in file 'C:\Users\mb_la\OneDrive\Documentos\MB_Robotizando\Pages\Filtros\Filtrando_ProdutosZA.robot' on line 3: Resource file '..\..\Pages\Filtrando_ProdutosAZ.robot' does not exist.</msg>
 </errors>
 </robot>
